@@ -41,7 +41,7 @@ body{
 }
 
 .logo{
-    font-size:40px;
+    font-size:50px;
     margin-bottom:10px;
 }
 
@@ -90,56 +90,42 @@ button:hover{
 <body>
 
 <div class="overlay">
-    <div class="card">
+<div class="card">
 
-        <div class="logo">⛏️</div>
+<div class="logo">⛏️</div>
 
-        <h1>DianaLand</h1>
+<h1>DianaLand</h1>
 
-        <div class="info">
-            <div class="label">آدرس سرور</div>
-            <div id="ip">DianaLand.aternos.me</div>
+<div class="info">
+<div class="label">آدرس سرور</div>
+<div id="ip">DianaLand.aternos.me:58004</div>
 
-            <button onclick="copyIP()">
-                📋 کپی IP
-            </button>
-        </div>
+<button onclick="copyIP()">
+📋 کپی آدرس
+</button>
+</div>
 
-        <div class="info">
-            <div class="label">پورت</div>
-            <div id="port">58004</div>
+<div class="info">
+<div class="label">ورژن</div>
+<div>26.1.2</div>
+</div>
 
-            <button onclick="copyPort()">
-                📋 کپی پورت
-            </button>
-        </div>
+<div class="info">
+<div class="label">نوع سرور</div>
+<div>Java</div>
+</div>
 
-        <div class="info">
-            <div class="label">نسخه</div>
-            <div>1.21.6</div>
-        </div>
+<div class="footer">
+Minecraft Java Server
+</div>
 
-        <div class="info">
-            <div class="label">نوع سرور</div>
-            <div>Java Edition</div>
-        </div>
-
-        <div class="footer">
-            Minecraft Java Server
-        </div>
-
-    </div>
+</div>
 </div>
 
 <script>
 function copyIP(){
-    navigator.clipboard.writeText("DianaLand.aternos.me");
-    alert("IP کپی شد!");
-}
-
-function copyPort(){
-    navigator.clipboard.writeText("58004");
-    alert("پورت کپی شد!");
+navigator.clipboard.writeText("DianaLand.aternos.me:58004");
+alert("آدرس سرور کپی شد!");
 }
 </script>
 

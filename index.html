@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DianaLand Minecraft Server</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Tahoma,sans-serif;
+    min-height:100vh;
+
+    background-image:url("https://wallpapercave.com/wp/wp2465920.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.overlay{
+    min-height:100vh;
+    background:rgba(0,0,0,0.65);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:90%;
+    max-width:500px;
+
+    background:rgba(25,25,25,0.92);
+    border-radius:20px;
+    padding:25px;
+
+    color:white;
+    text-align:center;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.7);
+}
+
+.logo{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+h1{
+    color:#55ff55;
+    margin-bottom:20px;
+}
+
+.info{
+    background:#222;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+.label{
+    color:#55ff55;
+    font-weight:bold;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    background:#55ff55;
+    color:black;
+    font-weight:bold;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+.footer{
+    margin-top:20px;
+    color:#aaa;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="card">
+
+<div class="logo">⛏️</div>
+
+<h1>DianaLand</h1>
+
+<div class="info">
+<div class="label">آدرس سرور</div>
+<div id="ip">DianaLand.aternos.me:58004</div>
+
+<button onclick="copyIP()">
+📋 کپی IP
+</button>
+</div>
+
+<button onclick="copyPort()">
+📋 کپی پورت
+</button>
+</div>
+
+<div class="info">
+<div class="label">نسخه</div>
+<div>26.1.2</div>
+</div>
+
+<div class="info">
+<div class="label">نوع سرور</div>
+<div>java</div>
+</div>
+
+<div class="footer">
+Minecraft Bedrock Server
+</div>
+
+</div>
+
+</div>
+
+<script>
+function copyIP(){
+navigator.clipboard.writeText(
+"DianaLand-Vtk6.aternos.me"
+);
+alert("IP کپی شد!");
+}
+
+function copyPort(){
+navigator.clipboard.writeText(
+"17149"
+);
+alert("پورت کپی شد!");
+}
+</script>
+
+</body>
+</html>

@@ -15,7 +15,6 @@
 body{
     font-family:Tahoma,sans-serif;
     min-height:100vh;
-
     background-image:url("https://wallpapercave.com/wp/wp2465920.jpg");
     background-size:cover;
     background-position:center;
@@ -25,7 +24,6 @@ body{
 .overlay{
     min-height:100vh;
     background:rgba(0,0,0,0.65);
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -34,14 +32,11 @@ body{
 .card{
     width:90%;
     max-width:500px;
-
     background:rgba(25,25,25,0.92);
     border-radius:20px;
     padding:25px;
-
     color:white;
     text-align:center;
-
     box-shadow:0 0 30px rgba(0,0,0,0.7);
 }
 
@@ -65,6 +60,7 @@ h1{
 .label{
     color:#55ff55;
     font-weight:bold;
+    margin-bottom:5px;
 }
 
 button{
@@ -94,58 +90,56 @@ button:hover{
 <body>
 
 <div class="overlay">
+    <div class="card">
 
-<div class="card">
+        <div class="logo">⛏️</div>
 
-<div class="logo">⛏️</div>
+        <h1>DianaLand</h1>
 
-<h1>DianaLand</h1>
+        <div class="info">
+            <div class="label">آدرس سرور</div>
+            <div id="ip">DianaLand.aternos.me</div>
 
-<div class="info">
-<div class="label">آدرس سرور</div>
-<div id="ip">DianaLand.aternos.me:58004</div>
+            <button onclick="copyIP()">
+                📋 کپی IP
+            </button>
+        </div>
 
-<button onclick="copyIP()">
-📋 کپی IP
-</button>
-</div>
+        <div class="info">
+            <div class="label">پورت</div>
+            <div id="port">58004</div>
 
-<button onclick="copyPort()">
-📋 کپی پورت
-</button>
-</div>
+            <button onclick="copyPort()">
+                📋 کپی پورت
+            </button>
+        </div>
 
-<div class="info">
-<div class="label">نسخه</div>
-<div>26.1.2</div>
-</div>
+        <div class="info">
+            <div class="label">نسخه</div>
+            <div>1.21.6</div>
+        </div>
 
-<div class="info">
-<div class="label">نوع سرور</div>
-<div>java</div>
-</div>
+        <div class="info">
+            <div class="label">نوع سرور</div>
+            <div>Java Edition</div>
+        </div>
 
-<div class="footer">
-Minecraft Bedrock Server
-</div>
+        <div class="footer">
+            Minecraft Java Server
+        </div>
 
-</div>
-
+    </div>
 </div>
 
 <script>
 function copyIP(){
-navigator.clipboard.writeText(
-"DianaLand-Vtk6.aternos.me"
-);
-alert("IP کپی شد!");
+    navigator.clipboard.writeText("DianaLand.aternos.me");
+    alert("IP کپی شد!");
 }
 
 function copyPort(){
-navigator.clipboard.writeText(
-"17149"
-);
-alert("پورت کپی شد!");
+    navigator.clipboard.writeText("58004");
+    alert("پورت کپی شد!");
 }
 </script>
 
